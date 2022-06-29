@@ -12,7 +12,7 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/do
 
 ## Self-Evaluation: 
 how many points out of 10 do you deserve on this assignment: 
-8, I did everything but ran into a ./util error in node_modules during the Jest tests, not sure why so I was unable to verify if that code worked.
+10
 
 ## Self-Reflection:
 The cypress tests were really cool to see and write without being too difficult. 10/10
