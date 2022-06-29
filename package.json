@@ -6,7 +6,9 @@
     "start": "open index.html",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "eslint --ext .js resources/scripts"
+    "lint": "eslint --ext .js resources/scripts",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "author": "Yahya Gilany <gilanyym@ucmail.uc.edu>",
   "license": "UNLICENSED",
