@@ -12,6 +12,7 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/do
 
 ## Self-Evaluation: 
 how many points out of 10 do you deserve on this assignment: 
+7, I attempted all of the sections, but ran into an error with node_modules and ./util in the Jest section, and then couldn't figure how to write a test for cypress. I found where it was but I don't understand calling elements and what server should i pass 
 
 ## Self-Reflection:
 
