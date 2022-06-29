@@ -1,7 +1,7 @@
-class RockPaperScissors {
+export class RockPaperScissors {
   constructor(username) {
     this.username = username;
-         this.score = {
+    this.score = {
       user: 0,
       cpu: 0 
     },
@@ -13,13 +13,13 @@ class RockPaperScissors {
    * using Math.random() method, you should be able to get one of the following values
    */
   generateCPUResponse(){
-      var acceptedValues = [ `rock`, `paper`, `scissors` ];
+    let acceptedValues = [ `rock`, `paper`, `scissors` ];
     const randomIndexNumber = Math.floor(Math.random() * 3); 
 
     return acceptedValues[randomIndexNumber];
   }
   /**
-   * returns one of the following values: `win`, `lose`, `tie`
+   * returns one of the following values: `win`, `lose`, `tie` :)
    * tie:
    *     the user selection the same as the CPU
    * win: 
@@ -34,18 +34,18 @@ class RockPaperScissors {
    * @param {string} cpuSelection computer selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
   determineWinner(userSelection, cpuSelection){
-    if (userSelection == cpuSelection) { 
-         return 'tie'; 
+    if (userSelection === cpuSelection) { 
+      return `tie`; 
     }
     else if(
-      (userSelection == 'paper' && cpuSelection == 'rock') || 
-      (userSelection == 'scissors' && cpuSelection == 'paper') || 
-      (userSelection == 'rock' && cpuSelection == 'scissors')
+      (userSelection === `paper` && cpuSelection === `rock`) || 
+      (userSelection === `scissors` && cpuSelection === `paper`) || 
+      (userSelection === `rock` && cpuSelection === `scissors`)
     ) { 
-      return 'win'; 
+      return `win`; 
     }
     else { 
-      return 'lose'; 
+      return `lose`; 
     }
   }
 
@@ -57,11 +57,11 @@ class RockPaperScissors {
     const cpuSelection = this.generateCPUResponse(); 
     const results = this.determineWinner(userSelection, cpuSelection); 
     
-    if(results == 'win') { 
-       this.score.user++; 
+    if(results === `win`) { 
+      this.score.user++; 
     }
-    if(results == 'lose') { 
-          this.score.cpu++; 
+    if(results === `lose`) { 
+      this.score.cpu++; 
     }
 
     this.gameHistoryLog.push(` ${this.username} selected ${userSelection}. CPU selected ${cpuSelection}: ${this.username} ${results}s`);
